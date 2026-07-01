@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Three - CSS</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, purple, magenta);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-block: 50px;
+            min-height: 50vh;
+            background-color: white;
+            border-radius: 50px;
+            width: 100%;
+            max-width: 800px;
+            margin-inline: auto;
+            gap: 2cm;
+        }
+
+        .login_card {
+
+            max-width: 420px;
+        }
+
+        .img_wrapper {
+
+            max-width: 420px;
+        }
+
+        .login_card input {
+            display: block;
+            width: 100%;
+            font-size: 1.5rem;
+            margin-block: 2.5rem;
+            padding-inline: 1rem;
+            padding-block: 10px;
+            border-radius: 50px;
+            border: none;
+            background-color: rgb(240, 240, 240);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .login_card button {
+            display: block;
+            width: 110%;
+            padding-block: 1rem;
+            border-radius: 50px;
+            background-color: limegreen;
+            border: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .options_wrapper {
+            display: grid;
+            place-items: center;
+        }
+
+        .signup_card {
+            background-color: #8385c7;
+            width: 100%;
+            max-width: 420px;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .signup {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .signup h2 {
+            color: white;
+        }
+
+        .signup input {
+            width: 100%;
+            padding: 12px 16px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            color: #333;
+        }
+
+        .name_wrapper {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .checkbox_group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 13px;
+            margin-top: 8px;
+        }
+
+        .submit_btn {
+            background-color: #928e85;
+            color: #b8b6b2;
+            border: none;
+            padding: 14px;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .login_link {
+            font-size: 14px;
+            margin-top: 12px;
+        }
+
+        .login_link a {
+            color: #ffffff;
+        }
+
+        .copyright {
+            font-size: 11px;
+            opacity: 0.8;
+            margin-top: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="signup_card">
+            <h2>Sign Up</h2>
+            <form class="signup" action="">
+                <div class="name_wrapper">
+                    <input type="text" placeholder=" First Name" required>
+                    <input type="text" placeholder=" Last Name" required>
+                </div>
+                <input type="email" placeholder=" Email" required>
+                <input type="password" placeholder=" Password" required>
+                <input type="password" placeholder=" Confirm Password" required>
+
+                <div class="checkbox_group">
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I accept the Terms of Use & Privacy Policy</label>
+                </div>
+
+                <button type="button" class="submit_btn">Sign Up</button>
+
+                <div class="login_link">
+                    Already have an account? <a href="#">Login here</a>
+                </div>
+
+                <div class="copyright">
+                    Copyright © YourCompany.com
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <div class="login">
+            <div class="img_wrapper">
+                <img width="300" height="300" src="./laptop_logo.svg" alt="Does this work?">
+            </div>
+            <form class="login_card" action="">
+                <h1>Member Login</h1>
+                <input type="text" placeholder=" Email">
+                <input type="password" placeholder=" ....">
+                <button>LOGIN</button>
+
+                <div class="options_wrapper">
+                    <p>Forgot <span style="color: limegreen">Username</span> / <span
+                            style="color: limegreen">Password?</span></p>
+                    <p><span style="color: limegreen">Create your account -></span></p>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

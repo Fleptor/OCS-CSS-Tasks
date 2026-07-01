@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Four - CSS</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            min-height: 100vh;
+        }
+
+        h1 {
+            background-color: brown;
+            font-size: 62px;
+            text-align: center;
+            padding: 150px;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            margin-inline: 20px;
+            color: green;
+            text-decoration: none;
+            font-size: 26px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section_one {
+            background-color: rgb(241, 130, 65);
+        }
+
+        .section_two {
+            display: grid;
+            place-items: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .section_two h2 {
+            text-align: center;
+            color: white;
+        }
+
+        .section_two form {
+            background-color: dodgerblue;
+            border-radius: 12px;
+            padding: 30px;
+            min-width: 580px;
+            box-shadow: 15px 15px 2.5px rgba(0, 0, 0, 0.2);
+        }
+
+        .section_two input {
+            display: block;
+            min-width: 98%;
+            font-size: large;
+            margin-bottom: 1rem;
+            padding: 10px;
+            border-radius: 12px;
+        }
+
+        .section_two textarea {
+           width: 100%;
+           height: 120px;
+           border-radius: 12px;
+           font-size: large;
+        }
+        .section_two button {
+            background-color: navy;
+            color: white;
+            font-size: 1.2rem;
+            padding: 4px 20px;
+            margin-top: 1rem;
+            border-radius: 12px;
+            border: none;
+        }
+
+        .section_three {
+            display: grid;
+            place-items: center;
+            background-color: lightblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .section_three form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+            min-width: 400px;
+            background-color: whitesmoke;
+            border-radius: 50px;
+            padding-block: 30px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+        }
+
+        .section_three h2 {
+            font-size: 2rem;
+            font-weight: normal;
+            color: midnightblue;
+            margin: 0;
+        }
+
+        .section_three .input-fields {
+            min-width: 320px;
+        }
+
+        .section_three label {
+            display: block;
+            margin-bottom: 0.2  rem;
+        }
+
+        .section_three input {
+            width: 100%;
+            font-size: medium;
+            margin-bottom: 1rem;
+            padding: 10px;
+            border-radius: 12px;
+            border: 1px solid dodgerblue;
+        }
+
+        .section_three button {
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            background-color: dodgerblue;
+            color: white;
+            border-radius: 5px;  
+            border: none; 
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="section_one">
+    <h1>THIS IS MY BANNER TEXT</h1>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">INFO</a>
+        <a href="#">CONTACT</a>
+        <a href="#">HUBPAGES</a>
+    </nav>
+    <h2>THIS IS MY PARAGRAPH HEADER</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate sequi ipsam excepturi similique quo? Sunt quos dignissimos aut quisquam, dolor commodi quibusdam ullam placeat? Consequatur voluptatibus voluptate voluptatum asperiores tenetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, corrupti. Magnam voluptas cupiditate ratione dolorum recusandae expedita vitae consectetur temporibus tempora, numquam esse accusamus reprehenderit eos cum at ab veritatis.</p>
+        <p>This is where I can place a copyright logo like this &copy;</p>
+    </section>
+
+    <section class="section_two">
+       
+            <form action="">
+                <h2>Contact Us</h2>
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+                <input type="tel" name="" id="contact-us-telephone" placeholder="tel: +962 7 XXXX XXXX">
+                <textarea name="user-msg" id="contact-us-message" placeholder=" Write here..."></textarea>
+                <button>Send</button>
+            </form>
+       
+    </section>
+
+    <section class="section_three">
+             <form action="">
+                    <h2>CODEWITHRANDOM</h2>
+                    <p>Thank you for being with me</p>
+                    <div class="input-fields">
+                        <label for="">Name</label>
+                    <input type="text" placeholder="Full Name">
+                        <label for="">Email</label>
+                    <input type="email" placeholder="Email">
+                        <label for="">Password</label>
+                    <input type="password" name="" id="">
+                        <label for="">Repeat Password</label>
+                    <input type="password" name="" id="">
+                    </div>
+                    <button>Register</button>
+                </form>
+    </section>
+</body>
+</html>
