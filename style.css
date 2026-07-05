@@ -1,0 +1,94 @@
+/*STYLESHEET*/
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+section {
+    display: grid;
+    place-items: center;
+    border: 1px solid #eeeeee;
+}
+
+.section_one {
+    height: 100vh;
+    background-color: #3499dd;
+}
+
+.signup h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.signup {
+    max-width: 420px;
+    background-color: white;
+    color: black;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+    padding-block: 40px;
+    gap: 1.25rem;
+}
+
+.signup input {
+    padding-block: 10px;
+    padding-inline: 8px;
+    background-color: #f2f2f2;
+    border: 0;
+}
+
+.name-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.name-wrapper input {
+    padding-inline-end: 0;
+}
+
+.signup input[type=password],
+.signup input[type=email],
+.wrapper {
+    width: 100%;
+}
+
+.signup button {
+    border: 0;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    background-color: #3499dd;
+    max-width: 100px;
+    width: 100%;
+    padding: 8px;
+}
+
+.wrapper span {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.wrapper hr {
+    border: 0;
+    background-color: #f2f2f2;
+    height: 1px;
+}
+
+.signup a {
+    text-decoration: none;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+	.signup {max-width: 320px;}
+    .signup input {width: 65%; font-size: 0.75rem;}
+
+}
