@@ -92,3 +92,71 @@ section {
     .signup input {width: 65%; font-size: 0.75rem;}
 
 }
+
+.section_two {
+    background-color: #f3f1ef;
+    height: 100vh;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 980px;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.contact-us header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #031234;
+    font-size: 10px;
+    padding: 20px;
+    color: white;
+    align-self: stretch;
+}
+
+.contact-us header a {
+    color: white;
+    text-decoration: none;
+    margin-inline-end: 5px;
+}
+
+.contact-us h1 {
+    font-weight: bolder;
+    font-size: 35px;
+    color: #031234;
+    margin-bottom: 0;
+}
+
+.heading-wrapper {
+    font-size: 14px;
+}
+
+.contact-us form {
+    max-width: 540px;
+    width: 100%;
+    padding-inline: 20px;
+}
+
+.contact-us form label {
+    display: block;
+    font-size: 14px;
+    text-align: left;
+}
+
+.contact-us form input {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+footer {
+    background-color: #efe0ca;
+    align-self: stretch;
+    padding:10px;
+}
